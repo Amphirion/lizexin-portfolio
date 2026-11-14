@@ -1,4 +1,4 @@
-Copyright (c) 2027 Zexin Li. All Rights Reserved.
+Copyright (c) 2026 Zexin Li. All Rights Reserved.
 
 This repository and its contents (including but not limited to source code, design files, and documentation) are the exclusive property of Zexin Li.
 
