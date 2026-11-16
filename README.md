@@ -64,29 +64,6 @@
 
 ---
 
-##  本地运行
-
-环境要求：**Node.js 20+**、npm 10+。
-
-```bash
-# 安装依赖
-npm install
-
-# 本地开发（默认 http://localhost:5173）
-npm run dev
-
-# 生产构建（产物位于 dist/）
-npm run build
-
-# 本地预览构建产物（默认 http://localhost:4173）
-npm run preview
-
-# 代码检查
-npm run lint
-```
-
----
-
 ##  目录结构（构建后）
 
 ```
