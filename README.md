@@ -87,26 +87,6 @@ npm run lint
 
 ---
 
-##  部署到 GitHub Pages
-
-本仓库已构建为静态站点，部署只需上传 `dist/` 目录的全部内容到仓库根（或 Pages 源）。
-
-```bash
-# 1. 生成本地构建
-npm run build
-
-# 2. 将 dist/ 内的所有文件上传到 GitHub 仓库根目录
-#    （含 index.html、assets/、images/、super-compressed_images/、favicon 等）
-
-# 3. 在仓库 Settings → Pages 选择对应分支 / 目录即可
-```
-
-- `vite.config.ts` 中已设置 `base: './'`，确保子路径下资源相对解析正确。
-- **不要只覆盖部分文件**：每次更新请整目录重新上传 `dist/`，避免旧资源残留导致破图。
-- 浏览器对 favicon / 图片缓存顽固，上线后请 **Ctrl + F5** 强刷确认。
-
----
-
 ##  目录结构（构建后）
 
 ```
