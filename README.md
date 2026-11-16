@@ -60,51 +60,6 @@
 | 光标拖尾小图 | 独立「超级压缩」目录（单张 1–13 KB），挂载时 `new Image()` 预载 |
 | favicon | 矢量「李」印章 SVG + 多尺寸 PNG / Apple Touch 图标 |
 
-> **GitHub Pages 部署注意**：本项目以**子路径**方式部署（`user.github.io/repo/`），因此所有静态资源（图片、超级压缩图、favicon、预加载链接）**一律使用相对路径**（`./images/...`、`./super-compressed_images/...`）。绝对路径（如 `/images/...`）在子路径下会被解析到域名根而 404，导致头像与拖尾破图。
-
----
-
-## 🚀 本地运行
-
-环境要求：**Node.js 20+**、npm 10+。
-
-```bash
-# 安装依赖
-npm install
-
-# 本地开发（默认 http://localhost:5173）
-npm run dev
-
-# 生产构建（产物位于 dist/）
-npm run build
-
-# 本地预览构建产物（默认 http://localhost:4173）
-npm run preview
-
-# 代码检查
-npm run lint
-```
-
----
-
-## 📦 部署到 GitHub Pages
-
-本仓库已构建为静态站点，部署只需上传 `dist/` 目录的全部内容到仓库根（或 Pages 源）。
-
-```bash
-# 1. 生成本地构建
-npm run build
-
-# 2. 将 dist/ 内的所有文件上传到 GitHub 仓库根目录
-#    （含 index.html、assets/、images/、super-compressed_images/、favicon 等）
-
-# 3. 在仓库 Settings → Pages 选择对应分支 / 目录即可
-```
-
-- `vite.config.ts` 中已设置 `base: './'`，确保子路径下资源相对解析正确。
-- **不要只覆盖部分文件**：每次更新请整目录重新上传 `dist/`，避免旧资源残留导致破图。
-- 浏览器对 favicon / 图片缓存顽固，上线后请 **Ctrl + F5** 强刷确认。
-
 ---
 
 ##  目录结构（构建后）
