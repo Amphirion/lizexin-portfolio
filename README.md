@@ -60,8 +60,6 @@
 | 光标拖尾小图 | 独立「超级压缩」目录（单张 1–13 KB），挂载时 `new Image()` 预载 |
 | favicon | 矢量「李」印章 SVG + 多尺寸 PNG / Apple Touch 图标 |
 
-> **GitHub Pages 部署注意**：本项目以**子路径**方式部署（`user.github.io/repo/`），因此所有静态资源（图片、超级压缩图、favicon、预加载链接）**一律使用相对路径**（`./images/...`、`./super-compressed_images/...`）。绝对路径（如 `/images/...`）在子路径下会被解析到域名根而 404，导致头像与拖尾破图。
-
 ---
 
 ##  目录结构（构建后）
